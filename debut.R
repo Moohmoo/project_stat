@@ -14,7 +14,7 @@ df_act %<>% mutate(is_active = factor(is_active))
 df_act_train <- df_act %>% 
   group_by(is_active) %>%
   slice_sample(prop = .7)
-df_act_test <- anti_join(df_act, df_act_train, by = "rowid")
+df_act_test <- anti_join(df_act, df_act_train, by = "rowid")https://github.com/paulimer/project_stat
 
 res_erk <- neuralnet(formula = form_erk,
                      data = df_act,
