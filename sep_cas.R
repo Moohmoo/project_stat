@@ -4,7 +4,7 @@ library(neuralnet)
 library(caret)
 
 # Load des données modifiées scalées, fichier à modif
-df_act_scaled <- read_csv("./dude_erk2_mk01_Descriptors.csv")
+df_act_scaled <- read_csv("./scaled_dude_erk2_mk01_Descriptors.csv")
 
 # 1 : 50/50
 # 2 : 75/25
